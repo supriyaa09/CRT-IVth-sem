@@ -17,7 +17,9 @@ else:
     print("Loop completed")
 '''
 '''username given check if pass is correct print sucessful execution else run loop for 3 attempts
-if all attempts fail print "Account locked'''
+if all attempts fail print Account locked'''
+
+
 username="USERNAME101"
 password="PASSWORD101"
 a=0
