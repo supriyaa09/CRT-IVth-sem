@@ -9,5 +9,12 @@ Types of errors:
 2RUNTIME ERROR:
 --> occur during program execution
 --> division by zero, file not found etc.
-
+3LOGICAL ERROR:
+--> program runs without error but produces incorrect results
+--> incorrect formula, wrong variable used etc.
+Debugging techniques:
+1. print()
+--> 
+2. try -except block
+3. using pdb
 '''
