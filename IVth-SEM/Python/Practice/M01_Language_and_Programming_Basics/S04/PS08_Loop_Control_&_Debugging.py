@@ -20,10 +20,29 @@ Debugging techniques:
 --> Pause the execution
 '''
 
-try:
+'''try:
     a=int(input("Enter a number:"))
     print(10/a)
 except ZeroDivisionError:
     print("Error: Division by zero is not allowed.")
 except ValueError:
     print("Error: Invalid input. Please enter a valid integer.")
+    '''
+#pdb commands:
+'''
+1. n--> execution in a next line
+2. p variable_name --> print value of variable
+3. l -->list nearby code
+4. c --> continue execution until next breakpoint
+5. s --> start with the function
+6. r -->return from the function
+7. h --> display help
+8. q -->Quit debugging session
+'''
+import pdb
+def add(a,b):
+    pdb.set_trace() #Setting a breaking point for debugging
+    return a+b
+a=int(input("Enter first number:"))
+b=int(input("Enter second number:"))
+print(add(a,b))
