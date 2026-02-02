@@ -17,4 +17,13 @@ Debugging techniques:
 --> 
 2. try -except block
 3. using pdb
+--> Pause the execution
 '''
+
+try:
+    a=int(input("Enter a number:"))
+    print(10/a)
+except ZeroDivisionError:
+    print("Error: Division by zero is not allowed.")
+except ValueError:
+    print("Error: Invalid input. Please enter a valid integer.")
