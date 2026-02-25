@@ -82,6 +82,44 @@ n=4
   1 2
  1 2 3
  1 2 3 4           i n->1 inc +1 and then dec -1'''
+'''n=int(input("Enter rows: "))
+for i in range(1,n+1):
+    print(" "*(n-i)+ " ".join([str(j) for j in range(1,i+1)]))'''
+
+'''Binary triangle pattern
+n=4
+   1
+  0 1
+ 1 0 1
+ 0 1 0 1           i n->1 inc +1 and then dec -1
+ 
+ Cross pattern:
+ n=5
+ *   *
+  * *
+   *
+  * *
+  *   *           i n->1 inc +1 and then dec -1
+  
+  Hollow diamond pattern:
+  n=4
+    *
+    * *
+   *   *
+    * *
+     *
+     
+Hollow pyramid pattern:
+n=4
+   *
+  * *
+ *   *
+ * * * *           i n->1 inc +1 and then dec -1'''
 n=int(input("Enter rows: "))
 for i in range(1,n+1):
-    print(" "*(n-i)+ " ".join([str(j) for j in range(1,i+1)]))
+    if i==1:
+        print(" "*(n-i)+"*")
+    elif i==n:
+        print("*"*(2*n-1))
+    else:
+        print(" "*(n-i)+"*"+(" "*(2*i-3))+"*")
