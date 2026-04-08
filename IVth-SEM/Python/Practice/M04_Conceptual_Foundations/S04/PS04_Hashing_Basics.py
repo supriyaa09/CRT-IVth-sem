@@ -13,3 +13,5 @@ def instruction(nums1,nums2):
     s2=set(nums2)
     print(list(s1.intersection(s2)))
 instruction([1,2,2,1],[2,2])
+
+'''leetcode : 1==> Two Sum'''
